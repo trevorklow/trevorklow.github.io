@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevTrev Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Social</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Trevor Low</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Fullstack developer</p>
+            <img src="img/trev.jpeg" alt="a picture of Trevor Low smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">Social</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Linkedin</h3>
+                    <br/>
+                    <p><a class="social-list__link" href="https://www.linkedin.com/in/trevor-kunimitsu-low/">
+                        <i id="zoom" class="fab fa-linkedin-in" style="color:#2867B2; font-size: 100px;"></i>
+                    </a></p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Github</h3>
+                    <br/>
+                    <p><a class="social-list__link" href="https://github.com/trevorklow">
+                        <i id="zoom" class="fab fa-github" style="color: white; font-size: 100px;"></i>
+                    </a></p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Medium</h3>
+                    <br/>
+                    <p><a class="social-list__link" href="https://medium.com/@trevorklow94">
+                        <i id="zoom" class="fab fa-medium" style="color: black; font-size: 100px;"></i>
+                    </a></p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Fullstack developer based out of Seattle</p>
+           
+           <div class="about-me__body">
+               <p>Hi! My name is Trevor, a Full Stack Software Engineer based in Seattle who enjoys discovering new technologies to implement in creative solutions to complex problems while building dynamic, clean, and user-friendly applications.</p>
+
+                <p>With my free time, I love working on side projects that help diversify and increase the social diversity of my community. I also enjoy contributing to the free database of tech information by posting weekly on medium.</p>
+                
+                <p>I am currently looking to launch my career at a fast paced and inclusive company and would also be open to internship opportunities.</p>
+           </div>
+           
+           <img src="img/trev3.jpg" alt="Trevor on a ferry to Bainbridge Island" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://github.com/trevorklow/Recipe-Backend" class="portfolio__item">
+                    <img src="img/Profile.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <div class="container">
+                    <div class= "no__portfolio__item">
+                    <img src="img/boba.png" alt=""  class="image">
+                    <div class="overlay">
+                        <div class="text">Coming Soon <br/>Boba Talk</div>
+                    </div>
+                </div>
+                </div>
+
+                
+                <!-- Portfolio item 03 -->
+                <div class="container">
+                    <div class= "no__portfolio__item">
+                    <img src="img/chinatown.jpg" alt=""  class="image">
+                    <div class="overlay">
+                        <div class="text">Coming Soon <br/>PRNSVC Clothing</div>
+                    </div>
+                </div>
+                </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <!-- replace with your own email address -->
+            <p>
+            <a href="mailto:trevorklow94@gmail.com" class="footer__link">trevorklow94@gmail.com</a>
+        </p>
+            <!-- <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul> -->
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
